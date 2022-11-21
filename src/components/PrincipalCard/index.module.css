@@ -1,18 +1,10 @@
-body{
-    background: linear-gradient(
-        0deg, #080808 0%, #1f1f1f 100%
-    );
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .container{
     position: relative;
+    margin-top: 400px;
 }
 
-.flip-box{
+.flipBox{
     background-color: transparent;
     width: 604px;
     height: 345px;
@@ -35,16 +27,16 @@ body{
     perspective: 0px;
 }
 
-.flip-box-inner{
+.flipBoxInner{
     position: relative;
-    width: 100%;
+    width: 100vh;
     height: 100%;
     text-align: center;
     transition: transform 1.2s;
     transform-style: preserve-3d;
 }
 
-.container:hover .flip-box-inner{
+.container:hover .flipBoxInner{
     transform: rotateY(180deg);
 }
 
@@ -52,20 +44,20 @@ body{
     transform:translate(-50%, -50%); rotate: rotateY(-180deg);
 }
 
-.flip-box-front, .flip-box-back {
+.flipBoxFront, .flipBoxBack {
     position: absolute;
     width: 100%;
     height: 100%;
     background-size: cover;
-    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     border-radius: 25px;
 }
 
-.flip-box-front{
+.flipBoxFront{
     background: #bb93c2 center;
 }
 
-.flip-box-back{
+.flipBoxBack{
     background: #ae7fe3;
     transform: rotateY(180deg);
 }

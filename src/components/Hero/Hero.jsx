@@ -4,6 +4,7 @@ const Hero = () =>{
 
   return (
     <>
+ 
       <div className={style.hero}>
         <div className={style.content}>
           <h2>Hero Header</h2>
@@ -11,6 +12,7 @@ const Hero = () =>{
         </div>
         <div className={style.waves}></div>
       </div>
+
     </>
   )
 }

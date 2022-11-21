@@ -5,10 +5,10 @@ const PrincipalCard = () =>{
     return(
         <>
         <div className={style.container}>
-            <div className={style.flip-box}>
-                <div className={style.flip-box-inner}>
-                    <div className={style.flip-box-front}>
-                    <div className={style.flip-box-back}></div>
+            <div className={style.flipBox}>
+                <div className={style.flipBoxInner}>
+                    <div className={style.flipBoxFront}>
+                    <div className={style.flipBoxBack}></div>
                     </div>
                 </div>
             </div>
