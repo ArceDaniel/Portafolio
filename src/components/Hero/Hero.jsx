@@ -2,8 +2,6 @@ import style from './index.module.css'
 
 const Hero = () =>{
 
-
-
   return (
     <>
       <div className={style.hero}>
