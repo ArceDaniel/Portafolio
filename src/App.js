@@ -1,12 +1,12 @@
-import logo from './logo.svg';
+import Hero from './components/Hero/Hero.jsx'
 import './App.css';
 
 function App() {
   return (
     <>
-    {/* <Hero></Hero>
-    <PrincipalCard></PrincipalCard>
-    <SecondCards></SecondCards> */}
+    {
+      <Hero />
+    }
     </>
   );
 }
