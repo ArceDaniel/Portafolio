@@ -1,7 +1,9 @@
-import style from './index.module.css'
-import { ReactTypical } from '@deadcoder0904/react-typical'
+import style from './index.module.css';
+import Typewriter from 'typewriter-effect';
+
 
 const Home = () =>{
+
 
   return (
     <>
@@ -13,39 +15,49 @@ const Home = () =>{
             <br />
            my name is
             <br />
+          <span>
+            <Typewriter
+            options={
+              {
+                autoStart:true,
+                loop:true,
+                delay:100,
+                strings:[
+                  "Jonathan Daniel Arce"
+                ]
+              }
+            }
+            />
+          </span>
           </h3>
-          <h3 className={style.name}>jonathan Daniel Arce <span>&#160;</span></h3>
-          <h3 class="my-profession">
+          <h3 className={style.hello}>
             I'm a
             <br />
-            <span class="name typing"> </span>
+            <span>
+            <Typewriter
+            options={
+              {
+                autoStart:true,
+                loop:true,
+                delay:80,
+                strings:[
+                  "FullStack developer",
+                  "Stack: MERN & PERN"
+                ]
+              }
+            }
+             />
+            </span>
           </h3>
-          <div class="row home-icons">
-            <div class="icon">
-              <a
-                href="https://www.linkedin.com/in/barbara-cassiram/"
-                target="_blank"
-                ><i class="fa fa-linkedin-square"></i
-              ></a>
-            </div>
-            <div class="icon">
-              <a href="https://github.com/cassirambd" target="_blank"
-                ><i class="fa fa-github"></i
-              ></a>
-            </div>
-            <div class="icon">
-              <a
-                download=""
-                href="cv/cv_barbara_cassiram.pdf"
-                target="_blank"
-                ><i class="fa fa-file-text-o"></i
-              ></a>
-            </div>
+          <div className={style.homeIcons}>
+          <a href='https://www.linkedin.com/in/jonathandanielarce/' className={style.iconLikedin}></a>
+          <a href='https://github.com/ArceDaniel' className={style.iconGit}></a>
+          <div  download=""  href='../../img/cv.pdf' className={style.iconCv}></div>
           </div>
         </div>
-        <div class="home-img padd-15">
-          <img src="img/user.jpg" alt="" />
-        </div>
+        {/* <div className={style.imgHome}>
+          <img src="../../img/fotoCv.jpeg" alt='cv photo' />
+        </div> */}
       </div>
     </div>
 

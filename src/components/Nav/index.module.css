@@ -55,7 +55,7 @@
 .navToggler span {
   height: 2px;
   width: 18px;
-  background: rgb(137, 133, 218);
+  background: rgb(255, 128, 0);
   display: inline-block;
   position: relative;
 }
@@ -71,7 +71,7 @@
   content: " ";
   height: 2px;
   width: 18px;
-  background: rgb(137, 133, 218);
+  background: rgb(255, 128, 0);
   position: absolute;
   top: -6px;
   left: 0;
@@ -82,7 +82,7 @@
   content: " ";
   height: 2px;
   width: 18px;
-  background: rgb(137, 133, 218);
+  background: rgb(255, 128, 0);
   position: absolute;
   left: 0;
   transform: rotate(45deg);
@@ -94,7 +94,7 @@
   content: " ";
   height: 2px;
   width: 18px;
-  background: rgb(137, 133, 218);
+  background: rgb(255, 128, 0);
   position: absolute;
   top: 6px;
   left: 0;
@@ -104,7 +104,7 @@
   content: " ";
   height: 2px;
   width: 18px;
-  background: rgb(137, 133, 218);
+  background: rgb(255, 128, 0);
   position: absolute;
   left: 0;
   transform: rotate(-45deg);
@@ -131,7 +131,7 @@
   cursor: pointer;
 }
 .nav li p:hover {
-  background-color: rgba(137, 133, 218, 0.507);
+  background-color: rgba(255, 128, 0,0.5);
 }
 @media (max-width: 850px) {
 

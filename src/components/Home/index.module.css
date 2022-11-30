@@ -23,30 +23,65 @@
     margin: 15px 0;
     color: white;
   }
-  .name {
+  .hello span {
     font-size: 38px;
     font-weight: 700;
     color: rgb(255, 128, 0);
-    float: left;
-    position: relative;
-    z-index: 1;
-  }
-  .name span{
-    position: absolute;
-    right: 0;
-    width: 0;
-    border-left: 1px solid white;
-    background: #00000015;
-    z-index: 22;
-
-    animation: maquina 5s infinite alternate steps(23);
   }
 
-  @keyframes maquina {
-    from{
-        width:100%;
-    }
-    to{
-        width: 0;
-    }
-  }
+.homeIcons{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3em;
+  position: relative;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.iconLikedin{
+  background-image: url('../../img/linkedin-logo.png');
+  background-size: 100%;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  display: block;
+  margin: 30px 10px;
+  text-align:center;
+  cursor: pointer;
+}
+.iconLikedin:hover{
+  height: 80px;
+  width: 80px;
+}
+.iconGit:hover{
+  height: 80px;
+  width: 80px;
+}
+.iconCv:hover{
+  height: 80px;
+  width: 80px;
+}
+.iconGit{
+  background-image: url('../../img/github.png');
+  background-size: 100%;
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+  display: block;
+  margin: 30px 10px;
+  text-align:center;
+  cursor: pointer;
+}
+
+.iconCv{
+  background-image: url('../../img/cv.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 60px;
+  width: 60px;
+  display: block;
+  margin: 30px 10px;
+  text-align:center;
+  cursor: pointer;
+}

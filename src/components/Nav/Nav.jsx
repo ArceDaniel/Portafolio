@@ -25,9 +25,9 @@ const goTo = (e)=>{
         </div>
         <ul className={style.nav}>
           <li>
-            <p  id='home' onClick={goTo} style = {location.pathname === '/home'?(
+            <p  id='' onClick={goTo} style = {location.pathname === '/'?(
               {
-                color:'rgb(137, 133, 218)',
+                color:'rgb(255, 128, 0)',
                 background:'rgb(39,39,39)'
 
               }
@@ -36,7 +36,7 @@ const goTo = (e)=>{
           <li>
             <p id='about' onClick={goTo} style = {location.pathname === '/about'?(
               {
-                color:'rgb(137, 133, 218)',
+                color:'rgb(255, 128, 0)',
                 background:'rgb(39,39,39)'
 
               }
@@ -45,7 +45,7 @@ const goTo = (e)=>{
           <li>
             <p  id='skills' onClick={goTo} style = {location.pathname === '/skills'?(
               {
-                color:'rgb(137, 133, 218)',
+                color:'rgb(255, 128, 0)',
                 background:'rgb(39,39,39)'
 
               }
@@ -54,7 +54,7 @@ const goTo = (e)=>{
           <li>
             <p  id='portafolio' onClick={goTo} style = {location.pathname === '/portafolio'?(
               {
-                color:'rgb(137, 133, 218)',
+                color:'rgb(255, 128, 0)',
                 background:'rgb(39,39,39)'
 
               }
@@ -63,7 +63,7 @@ const goTo = (e)=>{
           <li>
             <p id='contact' onClick={goTo} style = {location.pathname === '/contact'?(
               {
-                color:'rgb(137, 133, 218)',
+                color:'rgb(255, 128, 0)',
                 background:'rgb(39,39,39)'
 
               }
