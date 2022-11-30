@@ -52,7 +52,7 @@ const Home = () =>{
           <div className={style.homeIcons}>
           <a href='https://www.linkedin.com/in/jonathandanielarce/' className={style.iconLikedin}></a>
           <a href='https://github.com/ArceDaniel' className={style.iconGit}></a>
-          <div  download=""  href='../../img/cv.pdf' className={style.iconCv}></div>
+          <a download href='./cv.pdf' className={style.iconCv}></a>
           </div>
         </div>
         {/* <div className={style.imgHome}>
