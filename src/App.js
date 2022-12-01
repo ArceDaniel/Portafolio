@@ -5,6 +5,8 @@ import Background from './components/Background/Background.jsx';
 import Home from './components/Home/home.jsx';
 import Skills from './components/Skills/Skills.jsx';
 import About from './components/About/About.jsx';
+import Contact from './components/Contact/Contact.jsx';
+import Portafolio from './components/Portafolio/Portafolio.jsx';
 
 
 function App() {
@@ -16,8 +18,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/skills" element={<Skills />}  />
         <Route path="/about" element={<About />}  />
-        {/* <Route path="/about" element={<Pizzas />} />
-        <Route path="/portafolio" element={<Bebidas />} /> */}
+        <Route path="/portafolio" element={<Portafolio />}  />
+        <Route path="/contact" element={<Contact />}  />
+    
       </Routes>
 
     </>

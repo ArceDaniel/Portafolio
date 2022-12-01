@@ -71,6 +71,7 @@
   margin: 30px 10px;
   text-align:center;
   cursor: pointer;
+  margin-left: 3em;
 }
 
 .iconCv{
@@ -83,6 +84,7 @@
   margin: 30px 10px;
   text-align:center;
   cursor: pointer;
+  margin-left: 3em;
 }
 
 .imgHome{
@@ -125,4 +127,10 @@
   border-right: 7px solid  rgba(255, 128, 0, .2);
   right: 20px;
   bottom: 80px;
+}
+
+@media (max-width: 1100px) {
+  .imgHome{
+    visibility: hidden;
+  }
 }
