@@ -23,7 +23,7 @@ const Home = () =>{
                 loop:true,
                 delay:100,
                 strings:[
-                  "Jonathan Daniel Arce"
+                  "Arce Aguirre Daniel"
                 ]
               }
             }
@@ -52,12 +52,12 @@ const Home = () =>{
           <div className={style.homeIcons}>
           <a href='https://www.linkedin.com/in/jonathandanielarce/' className={style.iconLikedin}></a>
           <a href='https://github.com/ArceDaniel' className={style.iconGit}></a>
-          <a download href='./cv.pdf' className={style.iconCv}></a>
+          <a href='./img/cv.pdf' download className={style.iconCv}></a>
           </div>
         </div>
-        {/* <div className={style.imgHome}>
-          <img src="../../img/fotoCv.jpeg" alt='cv photo' />
-        </div> */}
+        <div className={style.imgHome}>
+          <img src="./img/fotoCv2.jpeg" alt='cv photo' />
+        </div>
       </div>
     </div>
 

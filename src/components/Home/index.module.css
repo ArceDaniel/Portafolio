@@ -6,6 +6,7 @@
     padding-bottom: 70px;
     display: block;
     margin-left: 30%;
+  
   }
 .row {
     display: flex;
@@ -32,6 +33,7 @@
 .homeIcons{
   display: flex;
   flex-wrap: wrap;
+  right:7em;
   margin-top: 3em;
   position: relative;
   max-width: 100%;
@@ -51,16 +53,13 @@
   cursor: pointer;
 }
 .iconLikedin:hover{
-  height: 80px;
-  width: 80px;
+  transform: scale(1.1);
 }
 .iconGit:hover{
-  height: 80px;
-  width: 80px;
+  transform: scale(1.1);
 }
 .iconCv:hover{
-  height: 80px;
-  width: 80px;
+  transform: scale(1.1);
 }
 .iconGit{
   background-image: url('../../img/github.png');
@@ -84,4 +83,46 @@
   margin: 30px 10px;
   text-align:center;
   cursor: pointer;
+}
+
+.imgHome{
+  flex: 0 0 40%;
+  max-width: 40%;
+  text-align: center;
+  position: relative;
+}
+
+.imgHome img{
+  margin: auto;
+  height: 280px;
+  width: 280px;
+  border-radius: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+  right: 2px;
+}
+
+.imgHome::before {
+  content: " ";
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  border-radius: 50px;
+  border-left: 7px solid  rgba(255, 128, 0, .5);
+  border-top: 7px solid  rgba(255, 128, 0, .5);
+  left: -20px;
+  top: -40px;
+}
+
+.imgHome::after {
+  content: " ";
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  border-radius: 50px;
+  border-bottom: 7px solid  rgba(255, 128, 0, .2);
+  border-right: 7px solid  rgba(255, 128, 0, .2);
+  right: 20px;
+  bottom: 80px;
 }

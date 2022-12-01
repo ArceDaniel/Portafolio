@@ -1,0 +1,83 @@
+.container {
+    height: 100%;
+    width: 70%;
+    margin: auto;
+    padding-top: 60px;
+    padding-bottom: 70px;
+    display: block;
+    margin-left: 25%;
+  }
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+.title{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+ .title h2{
+    font-size: 40px;
+    color: white;
+    font-weight: 600;
+    position: relative;
+ }
+ .title h2::before{
+    content: " ";
+    height: 4px;
+    width: 70px;
+    background-color: rgb(255, 128, 0);;
+    border-radius: 10px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.skillsSection{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 30px;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: center;
+    position: static;
+    
+}
+.skillsContainer{
+    position: relative;
+    background-color: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    padding: 30px 15px;
+    text-align: center;
+}
+.skillsContainer span{
+  flex:100%;
+  max-width: 100%;
+  margin: 10px;
+  padding-bottom: 20px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--text-black-900);
+}
+.skillsContainer span:hover{
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.45);
+}
+.skillsContainer img{
+  height: 90px;
+  width: 90px;
+  display: inline-block;
+  margin: 30px;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+.skillsContainer img:hover{
+    transform: scale(1.1);
+}
