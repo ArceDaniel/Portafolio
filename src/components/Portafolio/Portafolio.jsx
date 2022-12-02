@@ -4,8 +4,22 @@ const Portafolio = () =>{
 
   return (
     <>
-    <div></div>
+       <div className={style.container}>
+            <div className={style.row}>
+              <div className={style.title}>
+                <h2>Portfolio</h2>
+              </div>
+            </div>
+            <div className={style.row}>
+            <div className={style.heading}>
+                <h2>My Projects:</h2>
+              </div>
+            </div>
+            <div className={style.row}> 
+            
+            </div>
 
+      </div>
     </>
   )
 }

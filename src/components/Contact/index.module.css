@@ -1,33 +1,39 @@
 .container {
-    height: 100%;
-    width: 70%;
-    margin: auto;
-    padding-top: 60px;
-    padding-bottom: 70px;
-    display: block;
-    margin-left: 25%;
+  height: 100%;
+  width: 70%;
+  margin: auto;
+  padding-top: 60px;
+  padding-bottom: 70px;
+  display: block;
+  margin-left: 25%;
 }
 .row {
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.title{
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .title h2{
-    font-size: 40px;
-    color: white;
-    font-weight: 600;
-    position: relative;
-    padding: 15px;
- }
- .title h2::before{
-    content: " ";
-    height: 4px;
-    width: 70px;
-    background-color: rgb(255, 128, 0);
-    border-radius: 10px;
-    position: absolute;
-    top: 100%;
-    left: 0;
+  font-size: 40px;
+  color: white;
+  font-weight: 600;
+  position: relative;
+}
+.title h2::before{
+  content: " ";
+  height: 4px;
+  width: 70px;
+  background-color: rgb(255, 128, 0);;
+  border-radius: 10px;
+  position: absolute;
+  top: 100%;
+  left: 0;
 }
 .titleContact{
     color:  rgb(255, 128, 0);

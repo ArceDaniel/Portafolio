@@ -1,144 +1,130 @@
+import { useNavigate } from 'react-router-dom';
 import style from './index.module.css';
 
 const About = () =>{
+  const navigate = useNavigate();
 
+  const goTo = (e)=>{
+    console.log(e.target.id);
+    navigate(`/${e.target.id}`)
+  }
   return (
     <>
-        <div class="container">
-            <div class="row">
-              <div class="section-title padd-15">
+        <div className={style.container}>
+            <div className={style.row}>
+              <div className={style.title}>
                 <h2>About Me</h2>
               </div>
             </div>
-            <div class="row">
-              <div class="about-content padd-15">
-                <div class="row">
-                  <div class="about-text padd-15">
+            <div className={style.row}>
+              <div className={style.aboutContent}>
+              <div className={style.row}>
+                  <div className={style.aboutText}>
                     <h3>
-                      &lt;Barbara Cassiram/&gt;
-                      <span>&lt;Full Stack Web Developer/&gt;</span>
+                      &lt;Arce Daniel /&gt;
+                      <span>&lt;Full Stack Web Developer /&gt;</span>
                     </h3>
                     <p>
-                      I have always been very curious, self-taught and
-                      enthusiastic about science and technology, I like to learn
-                      something new every day and at the same time I like to
-                      share that knowledge with others. I am characterized by my
-                      adaptability, creative thinking and teamwork, and I want
-                      to keep developing myself through continuous learning in
-                      order to gain more experience and personal improvement.
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium vel nostrum animi! Esse nam incidunt ipsam voluptatum, cupiditate exercitationem quod sed necessitatibus molestiae ad, a numquam similique aliquam nisi beatae?
                     </p>
                   </div>
                 </div>
-                <div class="row">
-                  <div class="personal-info padd-15">
-                    <div class="row">
-                      <div class="info-item padd-15">
+                <div className={style.row}>
+                  <div className={style.personalInfo}>
+                  <div className={style.row}>
+                    <div className={style.infoItem}>
                         <p>
                           Linkedin:
                           <a
-                            href="https://www.linkedin.com/in/barbara-cassiram/"
-                            target="_blank"
-                            ><span>Bárbara Cassiram</span></a
-                          >
+                            href="https://www.linkedin.com/in/jonathandanielarce/"
+                            ><span>Jonathan Daniel Arce</span></a>
                         </p>
                       </div>
-                      <div class="info-item padd-15">
+                      <div className={style.infoItem}>
                         <p>
                           Github:
                           <a
-                            href="https://github.com/cassirambd"
-                            target="_blank"
-                            ><span>cassirambd</span></a
-                          >
+                            href="https://github.com/ArceDaniel"
+                            ><span>ArceDaniel</span></a>
                         </p>
                       </div>
-                      <div class="info-item padd-15">
-                        <p>Email: <span>cassiram15@gmail.com</span></p>
+                      <div className={style.infoItem}>
+                        <p>Email: <span>jonathandanielarce@gmail.com</span></p>
                       </div>
-                      <div class="info-item padd-15">
-                        <p>Phone: <span>(+54)91128450190</span></p>
+                      <div className={style.infoItem}>
+                        <p>Phone: <span>(+54)9112346010</span></p>
                       </div>
-                      <div class="info-item padd-15">
+                      <div className={style.infoItem}>
                         <p>Location: <span>Buenos Aires, Argentina</span></p>
                       </div>
-                      <div class="info-item padd-15">
-                        <p>
-                          Cats:
-                          <span
-                            ><i class="fa fa-paw"></i>
-                            <i class="fa fa-paw"></i> <i class="fa fa-paw"></i
-                          ></span>
-                        </p>
-                      </div>
                     </div>
-                    <div class="row">
-                      <div class="buttons padd-15">
-                        <a
-                          href="#contact"
-                          data-section-index="1"
-                          class="btn hire-me"
-                          >Hire me</a
-                        >
+                    <div className={style.row}>
+                      <div className={style.buttons}>
+                        <button
+                          id='contact'
+                          onClick={goTo}
+                          className={style.btn}
+                          >Hire me</button>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="row">
-                  <div class="education padd-15">
-                    <h3 class="title">Education</h3>
-                    <div class="row">
-                      <div class="timeline-box padd-15">
-                        <div class="timeline shadow-dark">
+                <div className={style.row}>
+                  <div className={style.section}>
+                    <h3 className={style.subTitle}>Education</h3>
+                    <div className={style.row}>
+                      <div className={style.timelineBox}>
+                        <div className={style.timeline}>
          
-                          <div class="timeline-item">
-                            <div class="circle-dot"></div>
-                            <h3 class="timeline-date">
-                              <i class="fa fa-calendar"> 2022 - 2022</i>
+                          <div className={style.timelineItem}>
+                            <span className={style.circle}></span>
+                            <h3 className={style.timelineDate}>
+                              <i class="fa fa-calendar"> oct 2022 - feb 2023</i>
                             </h3>
-                            <h4 class="timeline-title">
+                            <h4 className={style.timelineTitle}>
                               Full Stack Developer - Henry Bootcamp
                             </h4>
-                            <p class="timeline-text">
+                            <p className={style.timelineText}>
                               +700 theoretical-practical course hours.
                             </p>
                           </div>
                   
-                          <div class="timeline-item">
-                            <div class="circle-dot"></div>
-                            <h3 class="timeline-date">
-                              <i class="fa fa-calendar"> 2011 - 2017</i>
+                          <div className={style.timelineItem}>
+                          <div className={style.circle}></div>
+                            <h3 className={style.timelineDate}>
+                              <i class="fa fa-calendar"> sep 2022 - oct 2022</i>
                             </h3>
-                            <h4 class="timeline-title">
-                              Clinical Laboratory Technician - U.E.P Colegio
-                              Cristo Rey
+                            <h4 className={style.timelineTitle}>
+                              Programacion Desde cero - Egg Education
                             </h4>
+                            <p className={style.timelineText}>
+                              +80 theoretical-practical course hours.
+                            </p>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="experience padd-15">
-                    <h3 class="title">Experience</h3>
-                    <div class="row">
-                      <div class="timeline-box padd-15">
-                        <div class="timeline shadow-dark">
+                  <div className={style.section}>
+                    <h3 className={style.subTitle}>Experience</h3>
+                    <div className={style.row}>
+                    <div className={style.timelineBox}>
+                    <div className={style.timeline}>
               
-                          <div class="timeline-item">
-                            <div class="circle-dot"></div>
-                            <h3 class="timeline-date">
+                    <div className={style.timelineItem}>
+                    <span className={style.circle}></span>
+                            <h3 className={style.timelineDate}>
                               <i class="fa fa-calendar"> 2022 - 2022</i>
                             </h3>
-                            <h4 class="timeline-title">
-                              Full Stack Teaching Assistant - Henry Bootcamp
+                            <h4 className={style.timelineTitle}>
+                              Full Stack Freelance
                             </h4>
-                            <p class="timeline-text">
-                              Coordinate a group of students to achieve
-                              integration to the study group.
+                            <p className={style.timelineText}>
+                              Create websites with the Mern and Pern stack
                               <br />
-                              Guide students in the first steps of the course.
+                              quite simple and intuitive
                               <br />
-                              Assist to solve exercises and promote group
-                              collaboration (Pair Programming).
+                              Some of them are uploaded to the web to see them
                             </p>
                           </div>
                         </div>
