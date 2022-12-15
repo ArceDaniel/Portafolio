@@ -8,10 +8,10 @@ const [open, setOpen] = useState(false)
 const navigate = useNavigate();
 const location = useLocation();
 
-const goTo = (e)=>{
-  console.log(e.target.id);
-  navigate(`/${e.target.id}`)
-}
+const goTo = (e)=>navigate(`/${e.target.id}`);
+
+  
+
 
   return (
       <div className={open ? style.asideOpen : style.aside}>

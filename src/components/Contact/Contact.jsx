@@ -81,7 +81,7 @@ const Contact = () =>{
                 </div>
                 <div className={style.row}>
                 <div className={style.formItem12}>
-                    <div class="form-group">
+                    <div className="form-group">
                       <textarea
                         name="textarea"
                         className={style.formControl}

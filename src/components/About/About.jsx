@@ -4,10 +4,7 @@ import style from './index.module.css';
 const About = () =>{
   const navigate = useNavigate();
 
-  const goTo = (e)=>{
-    console.log(e.target.id);
-    navigate(`/${e.target.id}`)
-  }
+  const goTo = (e)=>navigate(`/${e.target.id}`);
   return (
     <>
         <div className={style.container}>
@@ -25,13 +22,19 @@ const About = () =>{
                       <span>&lt;Full Stack Web Developer /&gt;</span>
                     </h3>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium vel nostrum animi! Esse nam incidunt ipsam voluptatum, cupiditate exercitationem quod sed necessitatibus molestiae ad, a numquam similique aliquam nisi beatae?
+                    I am a Fullstack Web Developer with an affinity for the backend...
+                    <br />
+                    But apart from programming, I enjoy reading and researching different topics, related to music, psychology, economics and powerlifting.
+                    <br />
+                    I consider myself an organized person, who solves problems effectively, independently, with a very good sense of humor and detail. I like to know new places and as a last detail I love cooking.
+                    <br />
+                    I like to participate in group projects with positive people who bring value and pleasant experiences.
                     </p>
                   </div>
                 </div>
                 <div className={style.row}>
                   <div className={style.personalInfo}>
-                  <div className={style.row}>
+                  <div className={`${style.row} ${style.inblock}`}>
                     <div className={style.infoItem}>
                         <p>
                           Linkedin:
@@ -64,12 +67,12 @@ const About = () =>{
                           id='contact'
                           onClick={goTo}
                           className={style.btn}
-                          >Hire me</button>
+                          >Let's work together!</button>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className={style.row}>
+                <div className={`${style.row} ${style.inblock}`}>
                   <div className={style.section}>
                     <h3 className={style.subTitle}>Education</h3>
                     <div className={style.row}>
@@ -92,7 +95,7 @@ const About = () =>{
                           <div className={style.timelineItem}>
                           <div className={style.circle}></div>
                             <h3 className={style.timelineDate}>
-                              <i class="fa fa-calendar"> sep 2022 - oct 2022</i>
+                              <i className="fa fa-calendar"> sep 2022 - oct 2022</i>
                             </h3>
                             <h4 className={style.timelineTitle}>
                               Programacion Desde cero - Egg Education
@@ -120,7 +123,7 @@ const About = () =>{
                               Full Stack Freelance
                             </h4>
                             <p className={style.timelineText}>
-                              Create websites with the Mern and Pern stack
+                              Create websites with the Mern and Pern stacks
                               <br />
                               quite simple and intuitive
                               <br />

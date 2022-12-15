@@ -50,9 +50,10 @@ const Home = () =>{
             </span>
           </h3>
           <div className={style.homeIcons}>
-          <a href='https://www.linkedin.com/in/jonathandanielarce/' className={style.iconLikedin}></a>
+          <a href='https://www.linkedin.com/in/jonathandanielarce/' 
+          className={style.iconLikedin}></a>
           <a href='https://github.com/ArceDaniel' className={style.iconGit}></a>
-          <a href='./img/cv.pdf' download className={style.iconCv}></a>
+          <a href='https://drive.google.com/file/d/1ycoq0ugHetDNITxGOzchjHLUI2DYPBJp/view?usp=share_link' download className={style.iconCv}></a>
           </div>
         </div>
         <div className={style.imgHome}>
