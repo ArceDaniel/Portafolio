@@ -20,7 +20,7 @@ const Portafolio = () =>{
             <div className={style.projects}> 
             {
               projects.map(e => (
-              <Projects title={e.title} img ={e.img} description = {e.description} website={e.website} />
+              <Projects key={e.id} title={e.title} img ={e.img} description = {e.description} website={e.website} />
               ))
             }
             </div>

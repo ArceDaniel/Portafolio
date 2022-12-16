@@ -34,7 +34,7 @@ const goTo = (e)=>{
                 background:'rgb(39,39,39)'
 
               }
-            ):null }><i class="fa fa-home" ></i> HOME</p>
+            ):null }><i className="fa fa-home" ></i> HOME</p>
           </li>
           <li>
             <p id='about' onClick={goTo} style = {location.pathname === '/about'?(
@@ -43,7 +43,7 @@ const goTo = (e)=>{
                 background:'rgb(39,39,39)'
 
               }
-            ):null } ><i class="fa fa-user"></i> ABOUT</p>
+            ):null } ><i className="fa fa-user"></i> ABOUT</p>
           </li>
           <li>
             <p  id='skills' onClick={goTo} style = {location.pathname === '/skills'?(
@@ -52,7 +52,7 @@ const goTo = (e)=>{
                 background:'rgb(39,39,39)'
 
               }
-            ):null } ><i class="fa fa-list"></i> SKILLS</p>
+            ):null } ><i className="fa fa-list"></i> SKILLS</p>
           </li>
           <li>
             <p  id='portafolio' onClick={goTo} style = {location.pathname === '/portafolio'?(
@@ -61,7 +61,7 @@ const goTo = (e)=>{
                 background:'rgb(39,39,39)'
 
               }
-            ):null } ><i class="fa fa-briefcase"></i> PORTFOLIO</p>
+            ):null } ><i className="fa fa-briefcase"></i> PORTFOLIO</p>
           </li>
           <li>
             <p id='contact' onClick={goTo} style = {location.pathname === '/contact'?(
@@ -70,7 +70,7 @@ const goTo = (e)=>{
                 background:'rgb(39,39,39)'
 
               }
-            ):null } ><i class="fa fa-comments"></i> CONTACT</p>
+            ):null } ><i className="fa fa-comments"></i> CONTACT</p>
           </li>
         </ul>
       </div>
