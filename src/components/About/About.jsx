@@ -55,7 +55,7 @@ const About = () =>{
                         <p>Email: <span>jonathandanielarce9@gmail.com</span></p>
                       </div>
                       <div className={style.infoItem}>
-                        <p>Phone: <span>(+54)9112346010</span></p>
+                        <p>Phone: <span>(+54)91123346010</span></p>
                       </div>
                       <div className={style.infoItem}>
                         <p>Location: <span>Buenos Aires, Argentina</span></p>

@@ -114,7 +114,9 @@
     font-weight: 900;
     width: 200px;
     height: 80px;
+    transition: all 500ms ease-out;
     text-align: center;
+    cursor: pointer;
     font-weight: bold;
   }
   .btn:hover{
