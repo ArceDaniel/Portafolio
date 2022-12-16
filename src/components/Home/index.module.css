@@ -31,13 +31,10 @@
   }
 
 .homeIcons{
-    display: flex;
-    flex-wrap: wrap;
-    right: 7em;
-    margin-top: 3em;
-    position: relative;
-    width: 100vh;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3em;
+  position: absolute;
 }
 
 .iconLikedin{
