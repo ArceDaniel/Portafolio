@@ -5,7 +5,7 @@ const Skill = ({ name }) =>{
     <>
      <span>
         <img
-            src={`%PUBLIC_URL%/img/${name}.png`}
+            src={`%PUBLIC_URL%/${name}.png`}
             title={name}
             alt={name}
             class="skill-img"
