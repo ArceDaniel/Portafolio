@@ -57,7 +57,7 @@ const Home = () =>{
           </div>
         </div>
         <div className={style.imgHome}>
-          <img src="./img/fotoCv2.jpeg" alt='cv photo' />
+          <img src="https://res.cloudinary.com/dhkfa798t/image/upload/v1671149232/portafolio/fotoCv2_jvmepq.jpg" alt='cv photo' />
         </div>
       </div>
     </div>
