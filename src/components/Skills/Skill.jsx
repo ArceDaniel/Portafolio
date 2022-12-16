@@ -1,14 +1,13 @@
-const Skill = ({ name }) =>{
+const Skill = ({ name, url }) =>{
 
 
   return (
     <>
      <span>
         <img
-            src={`%PUBLIC_URL%/${name}.png`}
+            src={url}
             title={name}
             alt={name}
-            class="skill-img"
             />{name}
     </span>
     </>

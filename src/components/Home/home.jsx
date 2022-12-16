@@ -29,8 +29,6 @@ const Home = () =>{
             }
             />
           </span>
-          </h3>
-          <h3 className={style.hello}>
             I'm a
             <br />
             <span>
@@ -57,7 +55,7 @@ const Home = () =>{
           </div>
         </div>
         <div className={style.imgHome}>
-          <img src="%PUBLIC_URL%/fotoCv2.jpeg" alt='cv photo' />
+          <img src="https://res.cloudinary.com/dhkfa798t/image/upload/v1671149232/portafolio/fotoCv2_jvmepq.jpg" alt='cv photo' />
         </div>
       </div>
     </div>

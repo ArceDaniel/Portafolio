@@ -16,7 +16,7 @@ const Skills = () =>{
             <div className={style.skillsContainer}>
                 {
                     Tech.map(s =>(
-                <Skill key={s} name={s} />
+                <Skill key={s} name={s.name} url={s.url} />
                 ))
                 }
             </div>

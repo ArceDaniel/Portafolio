@@ -1,4 +1,6 @@
 import style from './index.module.css';
+import Projects from './Project.jsx';
+import projects from './projects.js';
 
 const Portafolio = () =>{
 
@@ -15,8 +17,12 @@ const Portafolio = () =>{
                 <h2>My Projects:</h2>
               </div>
             </div>
-            <div className={style.row}> 
-            
+            <div className={style.projects}> 
+            {
+              projects.map(e => (
+              <Projects title={e.title} img ={e.img} description = {e.description} website={e.website} />
+              ))
+            }
             </div>
 
       </div>
