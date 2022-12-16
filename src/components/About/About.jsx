@@ -52,7 +52,7 @@ const About = () =>{
                         </p>
                       </div>
                       <div className={style.infoItem}>
-                        <p>Email: <span>jonathandanielarce@gmail.com</span></p>
+                        <p>Email: <span>jonathandanielarce9@gmail.com</span></p>
                       </div>
                       <div className={style.infoItem}>
                         <p>Phone: <span>(+54)9112346010</span></p>

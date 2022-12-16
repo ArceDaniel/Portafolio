@@ -8,7 +8,10 @@ const [open, setOpen] = useState(false)
 const navigate = useNavigate();
 const location = useLocation();
 
-const goTo = (e)=>navigate(`/${e.target.id}`);
+const goTo = (e)=>{
+  setOpen(false);
+  return navigate(`/${e.target.id}`);
+};
 
   
 
