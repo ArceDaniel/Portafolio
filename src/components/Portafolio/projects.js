@@ -6,6 +6,13 @@ const projects =[
         description:'Create whith react.js and redux',
         website:'https://arcedaniel.github.io/app-rick-and-morty/',
     },
+    {   
+        id:2,
+        title:'Dogs pi',
+        img: 'https://res.cloudinary.com/dhkfa798t/image/upload/v1673278579/portafolio/dogsApi_u02gdr.png',
+        description:'front with react and redux, back with node and express',
+        website:'https://dogs-pi-front.vercel.app/',
+    },
 ]
 
 
