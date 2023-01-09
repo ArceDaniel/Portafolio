@@ -51,8 +51,8 @@
   place-content: center;
   place-items: center;
   overflow: hidden;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 12px;
   display: flex;
   justify-content: space-evenly;
