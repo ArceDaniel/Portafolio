@@ -13,6 +13,13 @@ const projects =[
         description:'front with react and redux, back with node and express',
         website:'https://dogs-pi-front.vercel.app/',
     },
+    {   
+        id:3,
+        title:'Don Remolo pizzas',
+        img: 'https://res.cloudinary.com/dhkfa798t/image/upload/v1673279701/portafolio/pizzeria_ttkemj.png',
+        description:'front with react and redux, back with node and express',
+        website:'http://donremolo.site/',
+    },
 ]
 
 

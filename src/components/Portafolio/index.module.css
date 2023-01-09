@@ -102,6 +102,7 @@ figure .layer h2{
   color: black;
   font-weight: 600;
   font-size: 28px;
+  width: 100%;
   color:  rgb(255, 128, 0);
   margin-bottom: 120px;
   transition: all 500ms ease-out;
